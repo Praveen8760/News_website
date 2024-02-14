@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBC NEWS</title>
+    <link rel="icon" href="./assets/icon/icon.png">
+
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/font.css">
+    <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-back">
+    <!-- header -->
+    <nav class="bg-white flex flex-row items-center px-6 py-4 lg:flex-row lg:px-32 lg:justify-between" id="nav">
+        <div class="flex flex-row relative w-full lg:w-32">
+            <img src="./assets/icon/icon.png" alt="icon" class="h-9">
+            <img src="./assets/icon/close.png" alt="close" class="hidden absolute right-0" id="close-btn">
+        </div>
+        <div class="content hidden lg:flex lg:content-center">
+            <ul class="flex gap-12 justify-center header_font content-item text-head-text">
+                <li class="text-center hover:text-breaking-red" id="world">World</li>
+                <li class="text-center hover:text-breaking-red" id="politics">Politics</li>
+                <li class="text-center hover:text-breaking-red" id="business">Business</li>
+                <li class="text-center hover:text-breaking-red" id="sports">Sports</li>
+                <li class="text-center hover:text-breaking-red tech" id="technology">Technology</li>
+            </ul>
+        </div>
+        <ul class="flex gap-8" id="nav_icon">
+            <li class="hidden lg:flex">
+                <p class="header_font text-breaking-red" id="date"></p>
+            </li>
+            <li class="flex lg:hidden">
+                <svg id="sidebar" xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.02453 1.69231H22.4259C22.8803 1.69231 23.249 1.31323 23.249 0.846154C23.249 0.379077 22.8803 0 22.4259 0H1.02453C0.571814 0 0.201405 0.379077 0.201405 0.846154C0.201405 1.31323 0.571814 1.69231 1.02453 1.69231ZM22.4259 6.76923H7.60957C7.15685 6.76923 6.78644 7.14831 6.78644 7.61538C6.78644 8.08246 7.15685 8.46154 7.60957 8.46154H22.4259C22.8803 8.46154 23.249 8.08246 23.249 7.61538C23.249 7.14662 22.8803 6.76923 22.4259 6.76923ZM22.4259 13.5367H1.02453C0.571814 13.5367 0.201405 13.9158 0.201405 14.3829C0.201405 14.8499 0.571814 15.229 1.02453 15.229H22.4259C22.8803 15.229 23.249 14.8499 23.249 14.3829C23.249 13.9158 22.8803 13.5367 22.4259 13.5367ZM22.4259 20.3077H10.079C9.62624 20.3077 9.25583 20.6868 9.25583 21.1538C9.25583 21.6209 9.62624 22 10.079 22H22.4259C22.8803 22 23.249 21.6209 23.249 21.1538C23.249 20.6868 22.8803 20.3077 22.4259 20.3077Z" fill="#2A2A2A"/>
+                </svg>
+            </li>
+        </ul>
+    </nav>
+
+<main class="mt-3 mx-6 lg:mx-24" id="body">
+    <!-- head lines -->
+    <section class="grid grid-cols-1 gap-1 h-auto lg:grid-cols-2 lg:gap-14">
+        <img src="./assets/img/head_test1.png" id="headline_img">
+        <main class="self-center mt-3">
+            <p class="text-breaking-red text-content_sm sub-text">Trending</p>
+            <span class="head text-heading_sm lg:text-heading_lg" id="headline">Cake meme reflects coronavirus absurdity in a world where nothing is what it seems</span>
+            <p class="text text-head-text text-content_sm mt-2 lg:text-content_lg" id="headline_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis voluptate perspiciatis expedita maxime porro iure numquam esse eligendi deserunt incidunt et placeat, delectus modi fugit, odit animi accusamus. Dicta.</p>
+            <a href="" target="_blank" class="text text-breaking-red text-content_sm mt-2 lg:text-content_lg" id="head_view_more">View More</a>
+            <footer class="mt-3 flex gap-3 text-quote-sm lg:text-quote">
+                <p class="text-head-text" id="heading_hours">2 hours ago |</p>
+                <p class="text-head-text" id="from">By BBC</p>
+            </footer>
+        </main>
+    </section>
+
+
+    <!-- breaking bar -->
+    <div class="bg-breaking-red flex gap-7 h-max mt-8 px-2  lg:gap-14 lg:px-12 justify-center py-4">
+        <button class="self-center bg-white h-max text-breaking-red head py-1.5 px-2 lg:px-4 lg:py-3 rounded-lg w-max" id="quote">
+            Get Quote
+        </button>
+        <span class="self-center w-3/6 text-balance text-white text text-center text-quote-sm lg:text-quote" id="quote_value">"Calm Road Never make a skillfull driver".</span>
+    </div>
+    <!-- short news section -->
+    <section class="mt-8">
+        <div class="bg-white lg:w-full flex justify-center items-center lg:justify-start">
+            <ul class="flex gap-8 items-center  text-head-text text-content_sm lg:text-content_lg ps-3 py-4 sub-text">
+                <li id="latest">Latest Stories</li>
+                <li id="tech2">Tech</li>
+                <li id="health">Health</li>
+            </ul>
+        </div>
+        <!-- loaction -->
+        <!-- <div class="">
+            <h3>Location News</h3>
+        </div> -->
+
+        <!-- cards -->
+        <main class="mt-6" id="news_main">
+            <div id="news_card_container" class="grid grid-cols-2 gap-2 lg:grid-cols-3 lg:w-full overflow-auto">
+                <!-- card-->
+            </div>
+        </main>
+    </section>
+
+<!-- carsoel -->
+    <section>
+
+    </section>
+</main>
+<footer class="mt-6 sub-text bg-footer grid grid-cols-1 place-items-start gap-2 px-10 py-5 lg:grid-cols-3 lg:px-20 lg:py-10 lg:place-items-center">
+    <div class="flex flex-col justify-start lg:justify-center">
+        <img src="./assets/icon/white-icon.png" class="w-8 h-6 lg:w-24 lg:h-2/3">
+        <p class="copyright text-white font"></p>
+    </div>
+    <div>
+        <ul class="flex flex-col gap-1 text-white">
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            <li>nbcnews.com</li>
+            <li>Site Map</li>
+        </ul>
+    </div>
+    <div class="flex-col gap-3 hidden lg:inline-flex">
+        <div class="self-end">
+            <ul class="text-white flex gap-4">
+                <li>About</li>
+                <li>Contect</li>
+                <li>Careers</li>
+                <li>Coupons</li>
+            </ul>
+        </div>
+        <div class="self-center lg:self-end">
+            <ul class="flex justify-center gap-2 lg:gap-4">
+                <li>
+                    <i class="fa-brands fa-threads text-white"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-instagram text-white"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-facebook text-white"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-github text-white"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="./src/js/index.js"></script>
+<script src="./src/js/api.js"></script>
+<script src="./src/js/side_bar.js"></script>
+<script src="https://kit.fontawesome.com/d756a2cf4b.js" crossorigin="anonymous"></script>
+</body>
+</html>
