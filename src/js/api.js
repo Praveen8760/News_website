@@ -35,7 +35,6 @@ async function get_gereral_news(){
         let request=await fetch(url)
         let data=await request.json()
         let len=data.articles.length
-        console.log(len);
         general_news(data,len)
     }
     catch(err){
@@ -49,7 +48,6 @@ async function get_world_news(){
         let request=await fetch(url)
         let data=await request.json()
         let len=data.articles.length
-        console.log(len);
         world_news(data,len)
     }
     catch(err){
@@ -63,7 +61,6 @@ async function get_business_news(){
         let request=await fetch(url)
         let data=await request.json()
         let len=data.articles.length
-        console.log(len);
         business_news(data,len)
     }
     catch(err){
@@ -77,7 +74,6 @@ async function get_sports_news(){
         let request=await fetch(url)
         let data=await request.json()
         let len=data.articles.length
-        console.log(len);
         sports_news(data,len)
     }
     catch(err){
@@ -91,7 +87,6 @@ async function get_tech_news(){
         let request=await fetch(url)
         let data=await request.json()
         let len=data.articles.length
-        console.log(len);
         technology_news(data,len)
     }
     catch(err){
@@ -134,11 +129,11 @@ function general_news(data,len){
         let footer=document.createElement('footer')
         let footer_desc=document.createElement('h6')
 
-        card.classList='flex flex-col bg-white'
-        card_main.classList='px-7 pb-4'
+        card.classList='flex flex-col bg-white items-center'
+        card_main.classList="flex flex-col px-6 pb-2"
         title.classList='text-head-text mt-3 content-sm head lg:text-quote'
         desc.classList='mt-3 header-font text-head-text lg:text-content_lg'
-        footer.classList="mt-5 text-breaking-red head"
+        footer.classList="mt-4 text-breaking-red"
 
 
         card_img.src=data.articles[i].image
@@ -174,10 +169,10 @@ function world_news(data,len){
         let footer_desc=document.createElement('h6')
 
         card.classList='flex flex-col bg-white'
-        card_main.classList='px-7 pb-4'
+        card_main.classList='px-6 pb-4'
         title.classList='text-head-text mt-3 content-sm head lg:text-quote'
         desc.classList='mt-3 header-font text-head-text lg:text-content_lg'
-        footer.classList="mt-5 text-breaking-red head"
+        footer.classList="mt-4 text-breaking-red"
 
 
         card_img.src=data.articles[i].image
@@ -216,10 +211,10 @@ function business_news(data,len){
         let footer_desc=document.createElement('h6')
 
         card.classList='flex flex-col bg-white'
-        card_main.classList='px-7 pb-4'
+        card_main.classList='px-6 pb-4'
         title.classList='text-head-text mt-3 content-sm head lg:text-quote'
         desc.classList='mt-3 header-font text-head-text lg:text-content_lg'
-        footer.classList="mt-5 text-breaking-red head"
+        footer.classList="mt-4 text-breaking-red"
 
 
         card_img.src=data.articles[i].image
@@ -258,10 +253,10 @@ function sports_news(data,len){
         let footer_desc=document.createElement('h6')
 
         card.classList='flex flex-col bg-white'
-        card_main.classList='px-7 pb-4'
+        card_main.classList='px-6 pb-4'
         title.classList='text-head-text mt-3 content-sm head lg:text-quote'
         desc.classList='mt-3 header-font text-head-text lg:text-content_lg'
-        footer.classList="mt-5 text-breaking-red head"
+        footer.classList="mt-4 text-breaking-red"
 
 
         card_img.src=data.articles[i].image
@@ -301,10 +296,10 @@ function technology_news(data,len){
         let footer_desc=document.createElement('h6')
 
         card.classList='flex flex-col bg-white'
-        card_main.classList='px-7 pb-4'
+        card_main.classList='px-6 pb-4'
         title.classList='text-head-text mt-3 content-sm head lg:text-quote'
         desc.classList='mt-3 header-font text-head-text lg:text-content_lg'
-        footer.classList="mt-5 text-breaking-red head"
+        footer.classList="mt-4 text-breaking-red"
 
 
         card_img.src=data.articles[i].image
@@ -342,10 +337,10 @@ function health_news(data,len){
         let footer_desc=document.createElement('h6')
 
         card.classList='flex flex-col bg-white'
-        card_main.classList='px-7 pb-4'
+        card_main.classList='px-6 pb-4'
         title.classList='text-head-text mt-3 content-sm head lg:text-quote'
         desc.classList='mt-3 header-font text-head-text lg:text-content_lg'
-        footer.classList="mt-5 text-breaking-red head"
+        footer.classList="mt-4 text-breaking-red"
 
 
         card_img.src=data.articles[i].image

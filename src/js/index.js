@@ -22,7 +22,6 @@ async function get_quote(){
     .then(res => res.json())
     .then(data => {
         let quote=data;
-        console.log(quote);
         quote_node.innerText=quote[0]['quote']
         
     })
