@@ -41,19 +41,8 @@ function close(){
 
 close_icon.addEventListener('click',close)
 
-world_btn.addEventListener('click',()=>{
-    setTimeout(close,500)
-})
-politics_btn.addEventListener('click',()=>{
-    setTimeout(close,500)
-})
-business_btn.addEventListener('click',()=>{
-    setTimeout(close,500)
-})
-sport_btn.addEventListener('click',()=>{
-    setTimeout(close,500)
-})
-
-tech_btn1.addEventListener('click',()=>{
-    setTimeout(close,500)
-})
+world_btn.addEventListener('click',close)
+politics_btn.addEventListener('click',close)
+business_btn.addEventListener('click',close)
+sport_btn.addEventListener('click',close)
+tech_btn1.addEventListener('click',close)
