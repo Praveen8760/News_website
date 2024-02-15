@@ -41,8 +41,10 @@ function close(){
 
 close_icon.addEventListener('click',close)
 
-world_btn.addEventListener('click',close)
-politics_btn.addEventListener('click',close)
-business_btn.addEventListener('click',close)
-sport_btn.addEventListener('click',close)
-tech_btn1.addEventListener('click',close)
+// world_btn.addEventListener('click',close)
+// politics_btn.addEventListener('click',close)
+// business_btn.addEventListener('click',close)
+// sport_btn.addEventListener('click',close)
+// tech_btn1.addEventListener('click',close)
+
+
