@@ -1,4 +1,4 @@
-const icon_node=document.getElementById('sidebar')
+const icon_node=document.getElementById('nav_side')
 const body_node=document.getElementById('body')
 const navbar_node=document.getElementById('nav')
 const nav_icon=document.getElementById('nav_icon')
