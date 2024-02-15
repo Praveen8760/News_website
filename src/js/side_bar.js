@@ -6,11 +6,11 @@ const conent_node=document.querySelector('.content')
 const content_item=document.querySelector('.content-item')
 const close_icon=document.querySelector('#close-btn')
 
-const world_btn=document.getElementById('world')
-const politics_btn=document.getElementById('politics')
-const business_btn=document.getElementById('business')
-const sport_btn=document.getElementById('sports')
-const tech_btn1=document.getElementById('technology')
+const world_btn_side=document.getElementById('world')
+const politics_btn_side=document.getElementById('politics')
+const business_btn_side=document.getElementById('business')
+const sport_btn_side=document.getElementById('sports')
+const tech_btn1_side=document.getElementById('technology')
 
 
 
